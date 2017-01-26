@@ -31,6 +31,7 @@
         self.clipsToBounds      = YES;
         [self.layer addSublayer:_chartLine];
         self.barRadius = 2.0;
+        self.textMargin = 22;
     }
 
     return self;
@@ -199,7 +200,7 @@
     } else {
       verticalY = topSpace +  (textheigt-size.height)/2.0;
     }
-    verticalY = MAX(topSpace-22, 0);
+    verticalY = MAX(topSpace-textMargin, 0);
     [self.textLayer setFrame:CGRectMake((textWidth-size.width)/2.0,verticalY, size.width,size.height)];
     self.textLayer.contentsScale = [UIScreen mainScreen].scale;
 

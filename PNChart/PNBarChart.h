@@ -82,7 +82,7 @@ typedef NSString *(^PNYLabelFormatter)(CGFloat yLabelValue);
 
 /** Width of all bars in the chart. */
 @property (nonatomic) CGFloat barWidth;
-
+@property (nonatomic) CGFloat barLabelMargin;
 @property (nonatomic) CGFloat labelMarginTop;
 
 /** Background color of all bars in the chart. */
