@@ -200,7 +200,7 @@
     } else {
       verticalY = topSpace +  (textheigt-size.height)/2.0;
     }
-    verticalY = MAX(topSpace-textMargin, 0);
+    verticalY = MAX(topSpace-_textMargin, 0);
     [self.textLayer setFrame:CGRectMake((textWidth-size.width)/2.0,verticalY, size.width,size.height)];
     self.textLayer.contentsScale = [UIScreen mainScreen].scale;
 
