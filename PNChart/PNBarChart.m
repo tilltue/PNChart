@@ -63,6 +63,7 @@
     _chartMarginBottom   = 25.0;
     _barRadius           = 2.0;
     _barLabelMargin      = 22.0;
+    _barLabelfontSize    = 18.0;
     _showChartBorder     = NO;
     _chartBorderColor    = PNLightGrey;
     _showLevelLine       = NO;
@@ -244,6 +245,7 @@
             //Change Bar Radius
             bar.barRadius = _barRadius;
             bar.textMargin = _barLabelMargin;
+            bar.fontSize = _barLabelfontSize;
             //Set Bar Animation
             bar.displayAnimated = self.displayAnimated;
 

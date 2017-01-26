@@ -32,6 +32,7 @@
         [self.layer addSublayer:_chartLine];
         self.barRadius = 2.0;
         self.textMargin = 22;
+        self.fontSize = 18;
     }
 
     return self;
@@ -186,7 +187,7 @@
     CGFloat textWidth = self.bounds.size.width;
   
     [_chartLine addSublayer:self.textLayer];
-    [self.textLayer setFontSize:18.0];
+    [self.textLayer setFontSize:_fontSize];
   
     [self.textLayer setString:[[NSString alloc]initWithFormat:@"%0.f",grade*self.maxDivisor]];
   
