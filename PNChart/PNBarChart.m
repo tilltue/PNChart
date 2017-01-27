@@ -278,6 +278,7 @@
             label.font = _labelFont;
             label.textColor = _labelTextColor;
             [label setTextAlignment:NSTextAlignmentCenter];
+            [_yChartLabels addObject:label];
             [self addSubview:label];
         }
 
@@ -311,7 +312,7 @@
     //Add Labels
 
     [self viewCleanupForCollection:_bars];
-
+    [self viewCleanupForCollection:_yChartLabels];
 
     //Update Bar
 
