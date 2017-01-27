@@ -272,6 +272,13 @@
 
             [_bars addObject:bar];
             [self addSubview:bar];
+            PNChartLabel *label = [[PNChartLabel alloc] initWithFrame:CGRectMake(barXPosition,
+                                                                                 CGRectGetMaxY(bar.frame),barWidth,kXLabelHeight)];
+            label.text = _xLabels[index];
+            label.font = _labelFont;
+            label.textColor = _labelTextColor;
+            [label setTextAlignment:NSTextAlignmentCenter];
+            [self addSubview:label];
         }
 
         //Height Of Bar
