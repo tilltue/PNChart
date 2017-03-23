@@ -24,6 +24,8 @@
 		34E17F221C2464FB00DBC20B /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 34E17F211C2464FB00DBC20B /* Default-568h@2x.png */; };
 		37B1E99EED46F3CDD1FF0AC6 /* libPods-PNChartDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B1ECCEE3BE8D22B46D7568CA /* libPods-PNChartDemo.a */; };
 		5C9B4AA31B05BBCB00093EBE /* PNBarChart.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C9B4AA21B05BBCB00093EBE /* PNBarChart.m */; };
+		5D9E434B1E8415EC00B1596C /* ParallaxHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D9E43481E8415EC00B1596C /* ParallaxHeaderView.m */; };
+		5D9E434C1E8415EC00B1596C /* UIImage+ImageEffects.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D9E434A1E8415EC00B1596C /* UIImage+ImageEffects.m */; };
 		6A35C46F1C4A0D22004AB51A /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6A35C46E1C4A0D22004AB51A /* Launch Screen.storyboard */; };
 		6E984E5D1AE2B00600E817A0 /* PNBarChartTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E984E5C1AE2B00600E817A0 /* PNBarChartTests.m */; };
 		6E984E5E1AE2B03800E817A0 /* PNBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 91177EC9198DFAC400017E27 /* PNBar.m */; };
@@ -79,6 +81,10 @@
 		34E17F211C2464FB00DBC20B /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		4C519A2B2B515B4587050D06 /* Pods-PNChartDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PNChartDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-PNChartDemo/Pods-PNChartDemo.release.xcconfig"; sourceTree = "<group>"; };
 		5C9B4AA21B05BBCB00093EBE /* PNBarChart.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PNBarChart.m; sourceTree = "<group>"; };
+		5D9E43471E8415EC00B1596C /* ParallaxHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ParallaxHeaderView.h; sourceTree = "<group>"; };
+		5D9E43481E8415EC00B1596C /* ParallaxHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ParallaxHeaderView.m; sourceTree = "<group>"; };
+		5D9E43491E8415EC00B1596C /* UIImage+ImageEffects.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+ImageEffects.h"; sourceTree = "<group>"; };
+		5D9E434A1E8415EC00B1596C /* UIImage+ImageEffects.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+ImageEffects.m"; sourceTree = "<group>"; };
 		6A35C46E1C4A0D22004AB51A /* Launch Screen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 		6E984E511AE2AF2D00E817A0 /* PNChartTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PNChartTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6E984E541AE2AF2D00E817A0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -214,6 +220,17 @@
 			name = PCChartViewController;
 			sourceTree = "<group>";
 		};
+		5D9E43461E8415EC00B1596C /* ParallaxHeaderView */ = {
+			isa = PBXGroup;
+			children = (
+				5D9E43471E8415EC00B1596C /* ParallaxHeaderView.h */,
+				5D9E43481E8415EC00B1596C /* ParallaxHeaderView.m */,
+				5D9E43491E8415EC00B1596C /* UIImage+ImageEffects.h */,
+				5D9E434A1E8415EC00B1596C /* UIImage+ImageEffects.m */,
+			);
+			path = ParallaxHeaderView;
+			sourceTree = "<group>";
+		};
 		6E984E521AE2AF2D00E817A0 /* PNChartTests */ = {
 			isa = PBXGroup;
 			children = (
@@ -245,6 +262,7 @@
 		9FE15DE0190BB014004129F5 /* PNChart */ = {
 			isa = PBXGroup;
 			children = (
+				5D9E43461E8415EC00B1596C /* ParallaxHeaderView */,
 				0A2922821A423FB300A42BC4 /* PNScatterChart.h */,
 				0A2922831A423FB300A42BC4 /* PNScatterChart.m */,
 				0A2922841A423FB300A42BC4 /* PNScatterChartData.h */,
@@ -489,6 +507,7 @@
 				9FE15DF8190BB014004129F5 /* PNChartLabel.m in Sources */,
 				ABD79D021B43700800A7C300 /* PNRadarChart.m in Sources */,
 				91177EDC198DFAC400017E27 /* PNCircleChart.m in Sources */,
+				5D9E434C1E8415EC00B1596C /* UIImage+ImageEffects.m in Sources */,
 				9FE15DFA190BB014004129F5 /* PNColor.m in Sources */,
 				91177ED8198DFAC400017E27 /* PNBar.m in Sources */,
 				91177EE2198DFAC400017E27 /* PNLineChartDataItem.m in Sources */,
@@ -503,6 +522,7 @@
 				0AF7A874182AA9F6003645C4 /* main.m in Sources */,
 				91177EE4198DFAC400017E27 /* PNPieChart.m in Sources */,
 				0AF7A878182AA9F6003645C4 /* PCAppDelegate.m in Sources */,
+				5D9E434B1E8415EC00B1596C /* ParallaxHeaderView.m in Sources */,
 				5C9B4AA31B05BBCB00093EBE /* PNBarChart.m in Sources */,
 				0A2922891A423FB300A42BC4 /* PNScatterChartData.m in Sources */,
 			);

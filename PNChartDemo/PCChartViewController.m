@@ -120,7 +120,7 @@
         self.titleLabel.text = @"Bar Chart";
         
         self.barChart = [[PNBarChart alloc] initWithFrame:CGRectMake(0, 135.0, SCREEN_WIDTH, 200.0)];
-//        self.barChart.showLabel = NO;
+        self.barChart.showLabel = NO;
         self.barChart.backgroundColor = [UIColor clearColor];
         self.barChart.yLabelFormatter = ^(CGFloat yValue){
             return [barChartFormatter stringFromNumber:@(yValue)];
@@ -136,12 +136,12 @@
         self.barChart.labelMarginTop = 5.0;
         self.barChart.showChartBorder = YES;
         [self.barChart setXLabels:@[@"2",@"3",@"4",@"5",@"2",@"3",@"4",@"5"]];
-//       self.barChart.yLabels = @[@-10,@0,@10];
-//        [self.barChart setYValues:@[@10000.0,@30000.0,@10000.0,@100000.0,@500000.0,@1000000.0,@1150000.0,@2150000.0]];
-        [self.barChart setYValues:@[@10.82,@1.88,@6.96,@33.93,@10.82,@1.88,@6.96,@33.93]];
+        //self.barChart.yLabels = @[@-10,@0,@10];
+        //[self.barChart setYValues:@[@10000.0,@30000.0,@10000.0,@100000.0,@500000.0,@1000000.0,@1150000.0,@2150000.0]];
+        [self.barChart setYValues:@[@0,@1.88,@6.96,@33.93,@10.82,@1.88,@6.96,@33.93]];
         [self.barChart setStrokeColors:@[PNGreen,PNGreen,PNRed,PNGreen,PNGreen,PNGreen,PNRed,PNGreen]];
         self.barChart.isGradientShow = NO;
-        self.barChart.isShowNumbers = NO;
+        //self.barChart.isShowNumbers = NO;
 
         [self.barChart strokeChart];
         
